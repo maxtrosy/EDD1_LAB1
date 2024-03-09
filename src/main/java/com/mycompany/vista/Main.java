@@ -28,12 +28,10 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panel4 = new java.awt.Panel();
-        button1 = new java.awt.Button();
-        button2 = new java.awt.Button();
-        button3 = new java.awt.Button();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        BOTONCMEDICOS = new javax.swing.JButton();
+        BOTONCITAS = new javax.swing.JButton();
+        FONDOBOTONESYLETRA = new javax.swing.JLabel();
+        FONDOPRINCIPALMAIN = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1280, 800));
@@ -41,69 +39,47 @@ public class Main extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1280, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        button1.setLabel("Citas");
-        button1.setName(""); // NOI18N
-        button1.addActionListener(new java.awt.event.ActionListener() {
+        BOTONCMEDICOS.setFont(new java.awt.Font("Verdana", 1, 60)); // NOI18N
+        BOTONCMEDICOS.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONCMEDICOS.setText("MÉDICOS");
+        BOTONCMEDICOS.setContentAreaFilled(false);
+        BOTONCMEDICOS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
+                BOTONCMEDICOSActionPerformed(evt);
             }
         });
+        getContentPane().add(BOTONCMEDICOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 630, 370, 120));
 
-        button2.setLabel("Medicos");
-        button2.addActionListener(new java.awt.event.ActionListener() {
+        BOTONCITAS.setFont(new java.awt.Font("Verdana", 1, 75)); // NOI18N
+        BOTONCITAS.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONCITAS.setText("CITAS");
+        BOTONCITAS.setContentAreaFilled(false);
+        BOTONCITAS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button2ActionPerformed(evt);
+                BOTONCITASActionPerformed(evt);
             }
         });
+        getContentPane().add(BOTONCITAS, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 630, 370, 120));
+        BOTONCITAS.getAccessibleContext().setAccessibleName("BOTONCITAS");
 
-        button3.setLabel("button3");
+        FONDOBOTONESYLETRA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/MEDBOOK BOTONES MAIN SIN FONDO.png"))); // NOI18N
+        getContentPane().add(FONDOBOTONESYLETRA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
-        javax.swing.GroupLayout panel4Layout = new javax.swing.GroupLayout(panel4);
-        panel4.setLayout(panel4Layout);
-        panel4Layout.setHorizontalGroup(
-            panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel4Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(button3, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
-                    .addComponent(button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(button2, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))
-                .addContainerGap(42, Short.MAX_VALUE))
-        );
-        panel4Layout.setVerticalGroup(
-            panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel4Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(button3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(49, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(768, 486, -1, -1));
-
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 345, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/MAIN FONDO_SOLO FOTO.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+        FONDOPRINCIPALMAIN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/MAIN FONDO_SOLO FOTO.png"))); // NOI18N
+        getContentPane().add(FONDOPRINCIPALMAIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
-        new RegistrarMedicosFrame().setVisible(true);
-    }//GEN-LAST:event_button2ActionPerformed
-
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+    private void BOTONCITASActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONCITASActionPerformed
         new RegistrarPacientesFrame().setVisible(true);
-    }//GEN-LAST:event_button1ActionPerformed
+    }//GEN-LAST:event_BOTONCITASActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void BOTONCMEDICOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONCMEDICOSActionPerformed
+        new RegistrarMedicosFrame().setVisible(true);
+    }//GEN-LAST:event_BOTONCMEDICOSActionPerformed
+
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -137,11 +113,9 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button button1;
-    private java.awt.Button button2;
-    private java.awt.Button button3;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel2;
-    private java.awt.Panel panel4;
+    private javax.swing.JButton BOTONCITAS;
+    private javax.swing.JButton BOTONCMEDICOS;
+    private javax.swing.JLabel FONDOBOTONESYLETRA;
+    private javax.swing.JLabel FONDOPRINCIPALMAIN;
     // End of variables declaration//GEN-END:variables
 }
