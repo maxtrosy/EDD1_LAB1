@@ -27,9 +27,10 @@ public class MenuFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        BtnClientes = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        BgMenu = new javax.swing.JLabel();
+        BOTONCITAS = new javax.swing.JButton();
+        BOTONMEDICOS = new javax.swing.JButton();
+        FONDOBOTONES = new javax.swing.JLabel();
+        FONDOMENU = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -37,20 +38,50 @@ public class MenuFrame extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
-        BtnClientes.setText("Clientes");
-        BtnClientes.setToolTipText("");
-        BtnClientes.setBorderPainted(false);
-        BtnClientes.setContentAreaFilled(false);
-        getContentPane().add(BtnClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 630, 360, 120));
+        BOTONCITAS.setFont(new java.awt.Font("Mukta Mahee", 1, 80)); // NOI18N
+        BOTONCITAS.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONCITAS.setToolTipText("");
+        BOTONCITAS.setBorderPainted(false);
+        BOTONCITAS.setContentAreaFilled(false);
+        BOTONCITAS.setLabel("Citas");
+        BOTONCITAS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BOTONCITASActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BOTONCITAS, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 630, 360, 120));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Juan\\Downloads\\LAB\\EDD1_LAB1-si-se-ooor\\src\\main\\java\\com\\mycompany\\vista\\imagenes\\BOTONESMAINSINFONDO.png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+        BOTONMEDICOS.setFont(new java.awt.Font("Mukta Mahee", 1, 80)); // NOI18N
+        BOTONMEDICOS.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONMEDICOS.setToolTipText("");
+        BOTONMEDICOS.setBorderPainted(false);
+        BOTONMEDICOS.setContentAreaFilled(false);
+        BOTONMEDICOS.setLabel("Médicos");
+        BOTONMEDICOS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BOTONMEDICOSActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BOTONMEDICOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 630, 360, 120));
 
-        BgMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\Juan\\Downloads\\LAB\\EDD1_LAB1-si-se-ooor\\src\\main\\java\\com\\mycompany\\vista\\imagenes\\FONDOPRINCIPALMAIN.png")); // NOI18N
-        getContentPane().add(BgMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, -2, 1280, 810));
+        FONDOBOTONES.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/BOTONESMENUFRMAE.png")); // NOI18N
+        FONDOBOTONES.setMaximumSize(new java.awt.Dimension(1280, 800));
+        FONDOBOTONES.setMinimumSize(new java.awt.Dimension(1280, 800));
+        getContentPane().add(FONDOBOTONES, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+
+        FONDOMENU.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOPRINCIPALMAIN.png")); // NOI18N
+        getContentPane().add(FONDOMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, -2, 1280, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BOTONCITASActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONCITASActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BOTONCITASActionPerformed
+
+    private void BOTONMEDICOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONMEDICOSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BOTONMEDICOSActionPerformed
 
     /**
      * @param args the command line arguments
@@ -88,9 +119,10 @@ public class MenuFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BgMenu;
-    private javax.swing.JButton BtnClientes;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton BOTONCITAS;
+    private javax.swing.JButton BOTONMEDICOS;
+    private javax.swing.JLabel FONDOBOTONES;
+    private javax.swing.JLabel FONDOMENU;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
