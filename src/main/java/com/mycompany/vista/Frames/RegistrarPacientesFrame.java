@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.vista;
+package com.mycompany.vista.Frames;
 
+import com.mycompany.vista.Pacientes;
 import java.time.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -460,7 +461,6 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
 
         jLabel2.setText("MedicosDisponibles");
 
-        allPData12.setBackground(new java.awt.Color(255, 255, 255));
         allPData12.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -476,7 +476,6 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         allPData12.setEnabled(false);
         jScrollPane1.setViewportView(allPData12);
 
-        JTable_MedicosDisponibles.setBackground(new java.awt.Color(255, 255, 255));
         JTable_MedicosDisponibles.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
