@@ -4,6 +4,8 @@
  */
 package com.mycompany.vista.Frames;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author maxtr
@@ -164,10 +166,13 @@ public class Login extends javax.swing.JFrame {
         String contrasena = TxtPassword.getText();
 
         if (usuario.equals("admin") && contrasena.equals("admin")) {
-
+            JOptionPane.showMessageDialog(this, "Inicio de sesión exitoso", "Login Correcto", JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
 
             new MenuFrame().setVisible(true);
+        } else {
+            
+            JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos", "Error de inicio de sesión", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_BtnIngresarActionPerformed
 
