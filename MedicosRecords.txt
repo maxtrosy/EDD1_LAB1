@@ -1,6 +1,6 @@
-0;Pedro;Garcia;Cardiología;1001001;3001001001;5
+0;Pedro;Garcia;Cardiología;1001001;3001001001;6
 2;Carlos;Fernandez;Endocrinología;1001003;3001001003;1
-3;Laura;Lopez;Gastroenterología;1001004;3001001004;1
+3;Laura;Lopez;Gastroenterología;1001004;3001001004;2
 4;Juan;Martinez;Neurología;1001005;3001001005;0
 5;Ana;Sanchez;Oncología;1001006;3001001006;0
 6;Diego;Perez;Pediatría;1001007;3001001007;0
@@ -43,6 +43,6 @@
 43;Emilia;Gutierrez;Gastroenterología;1001044;3001001044;0
 44;Luciano;Flores;Neurología;1001045;3001001045;0
 45;Agustina;Molina;Oncología;1001046;3001001046;0
-46;Juan;Ortiz;Pediatría;1001047;3001001047;0
-47;Maria;Cabrera;Psiquiatría;1001048;3001001048;0
+46;Juan;Ortiz;Pediatría;1001047;3001001047;1
+47;Maria;Cabrera;Psiquiatría;1001048;3001001048;1
 48;Carlos;Santos;Traumatología;1001049;3001001049;1

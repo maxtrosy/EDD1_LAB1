@@ -458,7 +458,21 @@ public class RegistrarMedicosFrame extends javax.swing.JFrame {
     private void especialidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_especialidadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_especialidadActionPerformed
-
+    private boolean verificar(String cedula, String telefono) {
+        try (BufferedReader lector = new BufferedReader(new FileReader("MedicosRecords.txt"))) {
+            String linea;
+            while ((linea = lector.readLine()) != null) {
+                String[] campos = linea.split(";");
+                if (campos[4] == cedula || campos[5] == telefono) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al leer el archivo MedicosRecords.txt");
+            e.printStackTrace();
+        }
+        return false;
+    }
     private void agregarMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarMedicoActionPerformed
         cargarIDs();
         if (nombre.getText().isEmpty()
@@ -469,32 +483,38 @@ public class RegistrarMedicosFrame extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Complete todos los campos.");
         } else {
-            try {
 
-                // Crear un nuevo objeto Medico
-                Medicos medico = new Medicos();
+            if (verificar(cedula.getText(), telefono.getText()) == true) {
+                JOptionPane.showMessageDialog(null, "Cedula o Telefono Invalidos.");
+            } else {
+                try {
 
-                // Configurar los atributos del paciente con los valores de los campos
-                id++;
-                System.out.println("LA id= " + id);
-                medico.setId(id);
-                medico.setNombre(nombre.getText());
-                medico.setApellido(apellido.getText());
-                medico.setEspecialidad(especialidad.getSelectedItem().toString()); // Obtener la especialidad seleccionada del JComboBox
-                medico.setCedula(Long.parseLong(cedula.getText()));
-                medico.setTelefono(Long.parseLong(telefono.getText()));
+                    // Crear un nuevo objeto Medico
+                    Medicos medico = new Medicos();
 
-                // Guardar la información del paciente en el archivo MedicosRecords.txt
-                guardarMedicoEnArchivo(medico);
+                    // Configurar los atributos del paciente con los valores de los campos
+                    id++;
+                    System.out.println("LA id= " + id);
+                    medico.setId(id);
+                    medico.setNombre(nombre.getText());
+                    medico.setApellido(apellido.getText());
+                    medico.setEspecialidad(especialidad.getSelectedItem().toString()); // Obtener la especialidad seleccionada del JComboBox
+                    medico.setCedula(Long.parseLong(cedula.getText()));
+                    medico.setTelefono(Long.parseLong(telefono.getText()));
 
-                // Limpia los campos después de crear el medico (opcional)
-                limpiarCampos();
+                    // Guardar la información del paciente en el archivo MedicosRecords.txt
+                    guardarMedicoEnArchivo(medico);
 
-                JOptionPane.showMessageDialog(null, "Medico registrado correctamente.");
-            } catch (NumberFormatException e) {
-                // Manejar el caso en que no se pueda convertir algún campo de texto a número
-                JOptionPane.showMessageDialog(null, "Error: Ingrese valores numéricos válidos en los campos de cédula, teléfono.");
+                    // Limpia los campos después de crear el medico (opcional)
+                    limpiarCampos();
+
+                    JOptionPane.showMessageDialog(null, "Medico registrado correctamente.");
+                } catch (NumberFormatException e) {
+                    // Manejar el caso en que no se pueda convertir algún campo de texto a número
+                    JOptionPane.showMessageDialog(null, "Error: Ingrese valores numéricos válidos en los campos de cédula, teléfono.");
+                }
             }
+
         }
     }//GEN-LAST:event_agregarMedicoActionPerformed
 
