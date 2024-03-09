@@ -6,14 +6,14 @@ package com.mycompany.vista;
 
 /**
  *
- * @author mariagutierrezgonzalez
+ * @author Juan
  */
-public class MainFrame extends javax.swing.JFrame {
+public class MenuFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form MainFrame
+     * Creates new form MenuFrame
      */
-    public MainFrame() {
+    public MenuFrame() {
         initComponents();
     }
 
@@ -26,19 +26,28 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PANELCENTRAL = new javax.swing.JPanel();
-        FONDOPRINCIPALMAINFRAME = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        BtnClientes = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        BgMenu = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1280, 800));
-        setMinimumSize(new java.awt.Dimension(1280, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        PANELCENTRAL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(PANELCENTRAL, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 0, -1, -1));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
-        FONDOPRINCIPALMAINFRAME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/FONDOPRINCIPALMAIN.png"))); // NOI18N
-        getContentPane().add(FONDOPRINCIPALMAINFRAME, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+        BtnClientes.setText("Clientes");
+        BtnClientes.setToolTipText("");
+        BtnClientes.setBorderPainted(false);
+        BtnClientes.setContentAreaFilled(false);
+        getContentPane().add(BtnClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 630, 360, 120));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Juan\\Downloads\\LAB\\EDD1_LAB1-si-se-ooor\\src\\main\\java\\com\\mycompany\\vista\\imagenes\\BOTONESMAINSINFONDO.png")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+
+        BgMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\Juan\\Downloads\\LAB\\EDD1_LAB1-si-se-ooor\\src\\main\\java\\com\\mycompany\\vista\\imagenes\\FONDOPRINCIPALMAIN.png")); // NOI18N
+        getContentPane().add(BgMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, -2, 1280, 810));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -60,26 +69,28 @@ public class MainFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainFrame().setVisible(true);
+                new MenuFrame().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel FONDOPRINCIPALMAINFRAME;
-    private javax.swing.JPanel PANELCENTRAL;
+    private javax.swing.JLabel BgMenu;
+    private javax.swing.JButton BtnClientes;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

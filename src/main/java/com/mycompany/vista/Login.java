@@ -163,13 +163,11 @@ public class Login extends javax.swing.JFrame {
         String usuario = TxtUsuario.getText();
         String contrasena = TxtPassword.getText();
 
-       
         if (usuario.equals("admin") && contrasena.equals("admin")) {
-         
-            this.dispose(); 
 
-          
-            new AcercaDe().setVisible(true);
+            this.dispose();
+
+            new MenuFrame().setVisible(true);
         }
     }//GEN-LAST:event_BtnIngresarActionPerformed
 
