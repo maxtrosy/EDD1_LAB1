@@ -10,7 +10,6 @@ juan;rojas;Gastroenterología;13;120319;1212;12122024
 dasdas;dasdas;Neurología;0004;4324323;32423;31032024
 fdsf;sdfdsf;Cardiología;0000;32432;432432;452024
 juan;rasd;Gastroenterología;3;1231;111;2122024
-Zahir;Acosta;Cardiología;0;1042249684;3022685979;10082024
 Zahir;Acosta;Cardiología;0;22;3022685979;11082024
 Zahir;Acosta;Cardiología;0;1042249684;3022685979;10032024
 Julian;Acosta;Gastroenterología;3;1042249688;3022685979;10032024
