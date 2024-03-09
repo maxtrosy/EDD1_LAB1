@@ -30,8 +30,8 @@ public class Main extends javax.swing.JFrame {
 
         BOTONCMEDICOS = new javax.swing.JButton();
         BOTONCITAS = new javax.swing.JButton();
-        FONDOBOTONESYLETRA = new javax.swing.JLabel();
-        FONDOPRINCIPALMAIN = new javax.swing.JLabel();
+        FONDOBOTONESMAIN = new javax.swing.JLabel();
+        FONDOPMAIN = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1280, 800));
@@ -62,11 +62,11 @@ public class Main extends javax.swing.JFrame {
         getContentPane().add(BOTONCITAS, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 630, 370, 120));
         BOTONCITAS.getAccessibleContext().setAccessibleName("BOTONCITAS");
 
-        FONDOBOTONESYLETRA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/MEDBOOK BOTONES MAIN SIN FONDO.png"))); // NOI18N
-        getContentPane().add(FONDOBOTONESYLETRA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+        FONDOBOTONESMAIN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/BOTONESMAINSINFONDO.png"))); // NOI18N
+        getContentPane().add(FONDOBOTONESMAIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
-        FONDOPRINCIPALMAIN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/MAIN FONDO_SOLO FOTO.png"))); // NOI18N
-        getContentPane().add(FONDOPRINCIPALMAIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+        FONDOPMAIN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/vista/imagenes/FONDOPRINCIPALMAIN.png"))); // NOI18N
+        getContentPane().add(FONDOPMAIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -115,7 +115,7 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BOTONCITAS;
     private javax.swing.JButton BOTONCMEDICOS;
-    private javax.swing.JLabel FONDOBOTONESYLETRA;
-    private javax.swing.JLabel FONDOPRINCIPALMAIN;
+    private javax.swing.JLabel FONDOBOTONESMAIN;
+    private javax.swing.JLabel FONDOPMAIN;
     // End of variables declaration//GEN-END:variables
 }

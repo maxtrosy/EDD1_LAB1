@@ -76,10 +76,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="FONDOBOTONESYLETRA">
+    <Component class="javax.swing.JLabel" name="FONDOBOTONESMAIN">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/mycompany/vista/imagenes/MEDBOOK BOTONES MAIN SIN FONDO.png"/>
+          <Image iconType="3" name="/com/mycompany/vista/imagenes/BOTONESMAINSINFONDO.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -88,10 +88,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="FONDOPRINCIPALMAIN">
+    <Component class="javax.swing.JLabel" name="FONDOPMAIN">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/mycompany/vista/imagenes/MAIN FONDO_SOLO FOTO.png"/>
+          <Image iconType="3" name="/com/mycompany/vista/imagenes/FONDOPRINCIPALMAIN.png"/>
         </Property>
       </Properties>
       <Constraints>
