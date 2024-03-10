@@ -27,18 +27,34 @@ public class AcercaDe extends javax.swing.JFrame {
     private void initComponents() {
 
         Salir = new javax.swing.JButton();
+        LETRASACERCADE = new javax.swing.JLabel();
+        BOTONSALIR = new javax.swing.JLabel();
+        FONDOCONFOTOS = new javax.swing.JLabel();
         FONDOACERCADE = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Salir.setFont(new java.awt.Font("Mukta Mahee", 1, 48)); // NOI18N
+        Salir.setForeground(new java.awt.Color(255, 255, 255));
         Salir.setText("Salir");
+        Salir.setContentAreaFilled(false);
         Salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SalirActionPerformed(evt);
             }
         });
-        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1196, 742, 78, 52));
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 720, 150, 52));
+
+        LETRASACERCADE.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/LETRASACERCADE.png")); // NOI18N
+        LETRASACERCADE.setText("jLabel2");
+        getContentPane().add(LETRASACERCADE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        BOTONSALIR.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/BOTON SALIR.png")); // NOI18N
+        getContentPane().add(BOTONSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+
+        FONDOCONFOTOS.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/ACERCADECONFOTOA.png")); // NOI18N
+        getContentPane().add(FONDOCONFOTOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
         FONDOACERCADE.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOACERCADE-2.png")); // NOI18N
         getContentPane().add(FONDOACERCADE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
@@ -86,7 +102,10 @@ public class AcercaDe extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BOTONSALIR;
     private javax.swing.JLabel FONDOACERCADE;
+    private javax.swing.JLabel FONDOCONFOTOS;
+    private javax.swing.JLabel LETRASACERCADE;
     private javax.swing.JButton Salir;
     // End of variables declaration//GEN-END:variables
 }
