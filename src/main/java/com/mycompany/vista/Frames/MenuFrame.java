@@ -67,23 +67,20 @@ public class MenuFrame extends javax.swing.JFrame {
         });
         getContentPane().add(BOTONMEDICOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 630, 360, 120));
 
-        FONDOBOTONES.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/BOTONESMENUFRMAE.png")); // NOI18N
         FONDOBOTONES.setMaximumSize(new java.awt.Dimension(1280, 800));
         FONDOBOTONES.setMinimumSize(new java.awt.Dimension(1280, 800));
         getContentPane().add(FONDOBOTONES, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
-
-        FONDOMENU.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOPRINCIPALMAIN.png")); // NOI18N
         getContentPane().add(FONDOMENU, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, -2, 1280, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void BOTONCITASActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONCITASActionPerformed
-        // TODO add your handling code here:
+      new RegistrarPacientesFrame().setVisible(true);
     }//GEN-LAST:event_BOTONCITASActionPerformed
 
     private void BOTONMEDICOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONMEDICOSActionPerformed
-        // TODO add your handling code here:
+        new RegistrarMedicosFrame().setVisible(true);
     }//GEN-LAST:event_BOTONMEDICOSActionPerformed
 
     /**
