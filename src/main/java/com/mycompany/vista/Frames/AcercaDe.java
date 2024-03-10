@@ -44,15 +44,13 @@ public class AcercaDe extends javax.swing.JFrame {
                 SalirActionPerformed(evt);
             }
         });
-        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 720, 150, 52));
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 720, 150, 52));
 
         LETRASACERCADE.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/LETRASACERCADE.png")); // NOI18N
         LETRASACERCADE.setText("jLabel2");
-        LETRASACERCADE.setMaximumSize(new java.awt.Dimension(1280, 800));
-        LETRASACERCADE.setMinimumSize(new java.awt.Dimension(1280, 800));
         getContentPane().add(LETRASACERCADE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        BOTONSALIR.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/SALIRAJUSTADOpng.png")); // NOI18N
+        BOTONSALIR.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/BOTON SALIR.png")); // NOI18N
         getContentPane().add(BOTONSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
         FONDOCONFOTOS.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/ACERCADECONFOTOA.png")); // NOI18N

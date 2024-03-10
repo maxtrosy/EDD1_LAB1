@@ -123,7 +123,7 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, 940, 130));
 
         cedula.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 250, 50));
+        getContentPane().add(cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 270, 60));
 
         BoxMes.setBorder(null);
         BoxMes.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
                 telefonoActionPerformed(evt);
             }
         });
-        getContentPane().add(telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 250, 40));
+        getContentPane().add(telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, 270, 60));
 
         BoxMedico.setBorder(null);
         BoxMedico.addActionListener(new java.awt.event.ActionListener() {
@@ -166,10 +166,10 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         getContentPane().add(BoxMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 410, 250, 40));
 
         apellido.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, 240, 40));
+        getContentPane().add(apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 280, 60));
 
         nombre.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 240, 50));
+        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 280, 60));
 
         BoxEspecialidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         BoxEspecialidad.addActionListener(new java.awt.event.ActionListener() {
