@@ -10,7 +10,7 @@
 10;Martin;Hernandez;Cardiología;1001011;3001001011;0
 11;Gabriela;Gonzalez;Dermatología;1001012;3001001012;0
 12;Javier;Ramirez;Endocrinología;1001013;3001001013;0
-13;Valeria;Alvarez;Gastroenterología;1001014;3001001014;0
+13;Valeria;Alvarez;Gastroenterología;1001014;3001001014;1
 14;Daniel;Jimenez;Neurología;1001015;3001001015;0
 15;Natalia;Vazquez;Oncología;1001016;3001001016;0
 16;Alejandro;Moreno;Pediatría;1001017;3001001017;0

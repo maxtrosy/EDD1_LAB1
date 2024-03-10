@@ -51,9 +51,6 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         BoxDia = new javax.swing.JTextField();
-        AsignarCita = new java.awt.Button();
-        EliminarCita = new java.awt.Button();
-        BtnSalir = new java.awt.Button();
         BoxAño = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         allPData12 = new javax.swing.JTable();
@@ -66,6 +63,9 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         apellido = new java.awt.TextField();
         nombre = new java.awt.TextField();
         BoxEspecialidad = new javax.swing.JComboBox<>();
+        BOTONASIGNARCITA = new javax.swing.JButton();
+        BOTONSALIR = new javax.swing.JButton();
+        BOTONELIMINARCITA1 = new javax.swing.JButton();
         FONDOREGISTRARCITA = new javax.swing.JLabel();
 
         jRadioButtonMenuItem1.setSelected(true);
@@ -95,31 +95,6 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         });
         getContentPane().add(BoxDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 540, 140, 30));
 
-        AsignarCita.setLabel("Asignar Cita");
-        AsignarCita.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AsignarCitaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(AsignarCita, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 370, 119, 40));
-        AsignarCita.getAccessibleContext().setAccessibleName("Asignar CIta");
-
-        EliminarCita.setLabel("Eliminar Cita");
-        EliminarCita.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EliminarCitaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(EliminarCita, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 490, 220, 45));
-
-        BtnSalir.setLabel("Salir");
-        BtnSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(BtnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 670, 119, 40));
-
         BoxAño.setBorder(null);
         BoxAño.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,7 +118,7 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
         allPData12.setEnabled(false);
         jScrollPane1.setViewportView(allPData12);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 610, 940, 140));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, 940, 130));
 
         cedula.setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().add(cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 250, 50));
@@ -200,72 +175,82 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
                 BoxEspecialidadActionPerformed(evt);
             }
         });
-        getContentPane().add(BoxEspecialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 370, 60));
+        getContentPane().add(BoxEspecialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 380, 60));
 
-        FONDOREGISTRARCITA.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOREGISTROCITAS.png")); // NOI18N
+        BOTONASIGNARCITA.setFont(new java.awt.Font("Mukta Mahee", 1, 40)); // NOI18N
+        BOTONASIGNARCITA.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONASIGNARCITA.setText("Asignar Cita");
+        BOTONASIGNARCITA.setBorder(null);
+        BOTONASIGNARCITA.setBorderPainted(false);
+        BOTONASIGNARCITA.setContentAreaFilled(false);
+        BOTONASIGNARCITA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BOTONASIGNARCITAActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BOTONASIGNARCITA, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 370, 260, 50));
+
+        BOTONSALIR.setFont(new java.awt.Font("Mukta Mahee", 1, 40)); // NOI18N
+        BOTONSALIR.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONSALIR.setText("Salir");
+        BOTONSALIR.setBorder(null);
+        BOTONSALIR.setBorderPainted(false);
+        BOTONSALIR.setContentAreaFilled(false);
+        BOTONSALIR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BOTONSALIRActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BOTONSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 720, 130, 50));
+
+        BOTONELIMINARCITA1.setFont(new java.awt.Font("Mukta Mahee", 1, 40)); // NOI18N
+        BOTONELIMINARCITA1.setForeground(new java.awt.Color(255, 255, 255));
+        BOTONELIMINARCITA1.setText("Eliminar Cita");
+        BOTONELIMINARCITA1.setBorder(null);
+        BOTONELIMINARCITA1.setBorderPainted(false);
+        BOTONELIMINARCITA1.setContentAreaFilled(false);
+        BOTONELIMINARCITA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BOTONELIMINARCITA1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BOTONELIMINARCITA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 490, 260, 50));
+
+        FONDOREGISTRARCITA.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/REGISTROCITASAJUSTADOpng.png")); // NOI18N
         getContentPane().add(FONDOREGISTRARCITA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSalirActionPerformed
+    private void BoxDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxDiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BoxDiaActionPerformed
+
+    private void BoxAñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxAñoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BoxAñoActionPerformed
+
+    private void BoxMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxMesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BoxMesActionPerformed
+
+    private void BoxEspecialidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxEspecialidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BoxEspecialidadActionPerformed
+
+    private void BoxMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxMedicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BoxMedicoActionPerformed
+
+    private void telefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefonoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_telefonoActionPerformed
+
+    private void BOTONSALIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONSALIRActionPerformed
         dispose();
-    }//GEN-LAST:event_BtnSalirActionPerformed
+    }//GEN-LAST:event_BOTONSALIRActionPerformed
 
-    private void EliminarCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarCitaActionPerformed
-        // Obtener la cédula y la fecha del paciente
-        String cedulaPacienteString = cedula.getText();
-        String fechaCita = BoxDia.getText() + BoxMes.getText() + BoxAño.getText();
-
-        // Verificar si los campos están vacíos
-        if (cedulaPacienteString.isEmpty() || fechaCita.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Ingrese la cédula y la fecha del paciente para eliminar la cita.");
-            return;
-        }
-
-        try {
-            int cedulaPaciente = Integer.parseInt(cedulaPacienteString);
-
-            // Buscar la cita correspondiente en los datos almacenados
-            boolean citaEncontrada = false;
-            try (BufferedReader lector = new BufferedReader(new FileReader("PacienteRecords.txt"))) {
-                StringBuilder newData = new StringBuilder();
-                String linea;
-                while ((linea = lector.readLine()) != null) {
-                    String[] campos = linea.split(";");
-                    // Verificar si los datos de esta línea coinciden con la cita a eliminar
-                    if (campos.length >= 7 && Integer.parseInt(campos[4]) == cedulaPaciente && campos[6].equals(fechaCita)) {
-                        // Si coincide, no agregamos esta línea al nuevo contenido
-                        citaEncontrada = true;
-                    } else {
-                        // Si no coincide, agregamos esta línea al nuevo contenido
-                        newData.append(linea).append("\n");
-                    }
-                }
-
-                // Escribir el nuevo contenido al archivo
-                try (BufferedWriter escritor = new BufferedWriter(new FileWriter("PacienteRecords.txt"))) {
-                    escritor.write(newData.toString());
-                }
-            } catch (IOException e) {
-                JOptionPane.showMessageDialog(null, "Error al leer o escribir en el archivo PacienteRecords.txt");
-                e.printStackTrace();
-            }
-
-            if (citaEncontrada) {
-                JOptionPane.showMessageDialog(null, "La cita ha sido eliminada correctamente.");
-            } else {
-                JOptionPane.showMessageDialog(null, "No se encontró ninguna cita con la cédula y fecha proporcionadas.");
-            }
-
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Error: La cédula debe ser un número entero.");
-        }
-        cargarDatosEnTabla(allPData12);
-        limpiarCampos();
-    }//GEN-LAST:event_EliminarCitaActionPerformed
-
-    private void AsignarCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AsignarCitaActionPerformed
+    private void BOTONASIGNARCITAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONASIGNARCITAActionPerformed
 
         Boolean idVerified = false;
 
@@ -338,31 +323,60 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
             }
 
         }
-    }//GEN-LAST:event_AsignarCitaActionPerformed
+    }//GEN-LAST:event_BOTONASIGNARCITAActionPerformed
 
-    private void BoxDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxDiaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BoxDiaActionPerformed
+    private void BOTONELIMINARCITA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTONELIMINARCITA1ActionPerformed
+                // Obtener la cédula y la fecha del paciente
+        String cedulaPacienteString = cedula.getText();
+        String fechaCita = BoxDia.getText() + BoxMes.getText() + BoxAño.getText();
 
-    private void BoxAñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxAñoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BoxAñoActionPerformed
+        // Verificar si los campos están vacíos
+        if (cedulaPacienteString.isEmpty() || fechaCita.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Ingrese la cédula y la fecha del paciente para eliminar la cita.");
+            return;
+        }
 
-    private void BoxMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxMesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BoxMesActionPerformed
+        try {
+            int cedulaPaciente = Integer.parseInt(cedulaPacienteString);
 
-    private void BoxEspecialidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxEspecialidadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BoxEspecialidadActionPerformed
+            // Buscar la cita correspondiente en los datos almacenados
+            boolean citaEncontrada = false;
+            try (BufferedReader lector = new BufferedReader(new FileReader("PacienteRecords.txt"))) {
+                StringBuilder newData = new StringBuilder();
+                String linea;
+                while ((linea = lector.readLine()) != null) {
+                    String[] campos = linea.split(";");
+                    // Verificar si los datos de esta línea coinciden con la cita a eliminar
+                    if (campos.length >= 7 && Integer.parseInt(campos[4]) == cedulaPaciente && campos[6].equals(fechaCita)) {
+                        // Si coincide, no agregamos esta línea al nuevo contenido
+                        citaEncontrada = true;
+                    } else {
+                        // Si no coincide, agregamos esta línea al nuevo contenido
+                        newData.append(linea).append("\n");
+                    }
+                }
 
-    private void BoxMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxMedicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BoxMedicoActionPerformed
+                // Escribir el nuevo contenido al archivo
+                try (BufferedWriter escritor = new BufferedWriter(new FileWriter("PacienteRecords.txt"))) {
+                    escritor.write(newData.toString());
+                }
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "Error al leer o escribir en el archivo PacienteRecords.txt");
+                e.printStackTrace();
+            }
 
-    private void telefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefonoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_telefonoActionPerformed
+            if (citaEncontrada) {
+                JOptionPane.showMessageDialog(null, "La cita ha sido eliminada correctamente.");
+            } else {
+                JOptionPane.showMessageDialog(null, "No se encontró ninguna cita con la cédula y fecha proporcionadas.");
+            }
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Error: La cédula debe ser un número entero.");
+        }
+        cargarDatosEnTabla(allPData12);
+        limpiarCampos();
+    }//GEN-LAST:event_BOTONELIMINARCITA1ActionPerformed
 
     private void cargarDatosEnTabla(JTable tabla) {
         DefaultTableModel modeloTabla = (DefaultTableModel) tabla.getModel();
@@ -636,14 +650,14 @@ public class RegistrarPacientesFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button AsignarCita;
+    private javax.swing.JButton BOTONASIGNARCITA;
+    private javax.swing.JButton BOTONELIMINARCITA1;
+    private javax.swing.JButton BOTONSALIR;
     private javax.swing.JTextField BoxAño;
     private javax.swing.JTextField BoxDia;
     private javax.swing.JComboBox<String> BoxEspecialidad;
     private javax.swing.JTextField BoxMedico;
     private javax.swing.JTextField BoxMes;
-    private java.awt.Button BtnSalir;
-    private java.awt.Button EliminarCita;
     private javax.swing.JLabel FONDOREGISTRARCITA;
     private javax.swing.JTable JTable_MedicosDisponibles;
     private javax.swing.JTable allPData12;

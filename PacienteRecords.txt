@@ -15,3 +15,4 @@ Zahir;Acosta;Cardiología;0;1042249684;3022685979;10032024
 Julian;Acosta;Gastroenterología;3;1042249688;3022685979;10032024
 Lucía;Montoya;Pediatría;46;10415645;30564586;16032024
 María;Gutierrez;Psiquiatría;47;104542;305646856;9032024
+Maria;Henao;Gastroenterología;13;732047;31032894;24072024

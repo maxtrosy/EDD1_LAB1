@@ -59,6 +59,7 @@ public class RegistrarMedicosFrame extends javax.swing.JFrame {
         BOTONBUSCAR = new javax.swing.JButton();
         BOTONAGREGARMEDICOS = new javax.swing.JButton();
         LETRASREGISTROMEDICO = new javax.swing.JLabel();
+        AJUSTADOSALIR = new javax.swing.JLabel();
         FONDOREGISTROMEDICOS = new javax.swing.JLabel();
 
         jRadioButtonMenuItem1.setSelected(true);
@@ -132,13 +133,18 @@ public class RegistrarMedicosFrame extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 1220, 240));
 
+        BOTONSALIR.setFont(new java.awt.Font("Mukta Mahee", 1, 40)); // NOI18N
+        BOTONSALIR.setForeground(new java.awt.Color(255, 255, 255));
         BOTONSALIR.setText("Salir");
+        BOTONSALIR.setBorder(null);
+        BOTONSALIR.setBorderPainted(false);
+        BOTONSALIR.setContentAreaFilled(false);
         BOTONSALIR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BOTONSALIRActionPerformed(evt);
             }
         });
-        getContentPane().add(BOTONSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 506, 100, 40));
+        getContentPane().add(BOTONSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 720, 130, 50));
 
         BOTONELIMINAR.setFont(new java.awt.Font("Mukta Mahee", 1, 40)); // NOI18N
         BOTONELIMINAR.setForeground(new java.awt.Color(255, 255, 255));
@@ -194,6 +200,9 @@ public class RegistrarMedicosFrame extends javax.swing.JFrame {
 
         LETRASREGISTROMEDICO.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/LETRASREGISTROMEDICOS.png")); // NOI18N
         getContentPane().add(LETRASREGISTROMEDICO, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
+
+        AJUSTADOSALIR.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/SALIRAJUSTADOpng.png")); // NOI18N
+        getContentPane().add(AJUSTADOSALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, -3, 1280, 800));
 
         FONDOREGISTROMEDICOS.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOREGISTROMEDICO-2.png")); // NOI18N
         getContentPane().add(FONDOREGISTROMEDICOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
@@ -454,6 +463,7 @@ public class RegistrarMedicosFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel AJUSTADOSALIR;
     private javax.swing.JButton BOTONAGREGARMEDICOS;
     private javax.swing.JButton BOTONBUSCAR;
     private javax.swing.JButton BOTONELIMINAR;
