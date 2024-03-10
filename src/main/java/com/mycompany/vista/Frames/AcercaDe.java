@@ -27,8 +27,10 @@ public class AcercaDe extends javax.swing.JFrame {
     private void initComponents() {
 
         Salir = new javax.swing.JButton();
+        FONDOACERCADE = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Salir.setText("Salir");
         Salir.addActionListener(new java.awt.event.ActionListener() {
@@ -36,23 +38,10 @@ public class AcercaDe extends javax.swing.JFrame {
                 SalirActionPerformed(evt);
             }
         });
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1196, 742, 78, 52));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(316, Short.MAX_VALUE)
-                .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(242, Short.MAX_VALUE)
-                .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        FONDOACERCADE.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOACERCADE-2.png")); // NOI18N
+        getContentPane().add(FONDOACERCADE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -97,6 +86,7 @@ public class AcercaDe extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel FONDOACERCADE;
     private javax.swing.JButton Salir;
     // End of variables declaration//GEN-END:variables
 }

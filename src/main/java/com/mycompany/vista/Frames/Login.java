@@ -26,6 +26,9 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
         TxtPassword = new javax.swing.JTextField();
         TxtUsuario = new javax.swing.JTextField();
         BtnIngresar = new javax.swing.JToggleButton();
@@ -36,6 +39,16 @@ public class Login extends javax.swing.JFrame {
         PNGLOGIN = new javax.swing.JLabel();
         FONDOLETRASBIENVENIDA = new javax.swing.JLabel();
         FONDOLOGIN = new javax.swing.JLabel();
+        MENULOGIN = new javax.swing.JMenuBar();
+        MENUACERCADE = new javax.swing.JMenu();
+        MENUSERVICIOS = new javax.swing.JMenu();
+        MENUNOTICIAS = new javax.swing.JMenu();
+
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1280, 800));
@@ -105,7 +118,7 @@ public class Login extends javax.swing.JFrame {
         LETRASINGRESAR.setFont(new java.awt.Font("Mukta Mahee", 1, 24)); // NOI18N
         LETRASINGRESAR.setForeground(new java.awt.Color(21, 41, 103));
         LETRASINGRESAR.setText("Por favor ingrese su usuario y contraseña");
-        getContentPane().add(LETRASINGRESAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 330, 440, 50));
+        getContentPane().add(LETRASINGRESAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 350, 440, 50));
 
         BOTONLEERMAS.setBorderPainted(false);
         BOTONLEERMAS.setContentAreaFilled(false);
@@ -127,6 +140,25 @@ public class Login extends javax.swing.JFrame {
 
         FONDOLOGIN.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/FONDOLOGIN-2.png")); // NOI18N
         getContentPane().add(FONDOLOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        MENULOGIN.setForeground(new java.awt.Color(21, 41, 103));
+
+        MENUACERCADE.setForeground(new java.awt.Color(21, 41, 103));
+        MENUACERCADE.setText("Acerca de ");
+        MENUACERCADE.setFont(new java.awt.Font("Mukta Mahee", 1, 15)); // NOI18N
+        MENULOGIN.add(MENUACERCADE);
+
+        MENUSERVICIOS.setForeground(new java.awt.Color(21, 41, 103));
+        MENUSERVICIOS.setText("Servicios");
+        MENUSERVICIOS.setFont(new java.awt.Font("Mukta Mahee", 1, 15)); // NOI18N
+        MENULOGIN.add(MENUSERVICIOS);
+
+        MENUNOTICIAS.setForeground(new java.awt.Color(21, 41, 103));
+        MENUNOTICIAS.setFont(new java.awt.Font("Mukta Mahee", 1, 15)); // NOI18N
+        MENUNOTICIAS.setLabel("Noticias/Artículos");
+        MENULOGIN.add(MENUNOTICIAS);
+
+        setJMenuBar(MENULOGIN);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -198,8 +230,15 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel LABELINICIO;
     private javax.swing.JLabel LABELLOGIN;
     private javax.swing.JLabel LETRASINGRESAR;
+    private javax.swing.JMenu MENUACERCADE;
+    private javax.swing.JMenuBar MENULOGIN;
+    private javax.swing.JMenu MENUNOTICIAS;
+    private javax.swing.JMenu MENUSERVICIOS;
     private javax.swing.JLabel PNGLOGIN;
     private javax.swing.JTextField TxtPassword;
     private javax.swing.JTextField TxtUsuario;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
 }
