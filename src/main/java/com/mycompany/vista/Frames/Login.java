@@ -53,7 +53,6 @@ public class Login extends javax.swing.JFrame {
         jMenuBar2.add(jMenu4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1280, 800));
         setMinimumSize(new java.awt.Dimension(1280, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -91,7 +90,6 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(TxtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 430, 380, 40));
         TxtUsuario.getAccessibleContext().setAccessibleName("Usuario");
-        TxtUsuario.getAccessibleContext().setAccessibleDescription("Usuario");
 
         BtnIngresar.setFont(new java.awt.Font("Mukta Mahee", 1, 45)); // NOI18N
         BtnIngresar.setForeground(new java.awt.Color(255, 255, 255));
@@ -130,10 +128,9 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BOTONLEERMAS, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 670, 160, 40));
-        BOTONLEERMAS.getAccessibleContext().setAccessibleName("");
 
         PNGLOGIN.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/SINFONDOPARTELOGIN.png")); // NOI18N
-        getContentPane().add(PNGLOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -3, 1280, 800));
+        getContentPane().add(PNGLOGIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -3, 1310, 800));
 
         FONDOLETRASBIENVENIDA.setIcon(new javax.swing.ImageIcon("/Users/mariagutierrezgonzalez/Documents/GitHub/EDD1_LAB1/src/main/java/com/mycompany/vista/imagenes/SINFONDOLETRASDEBIENVENIDA.png")); // NOI18N
         FONDOLETRASBIENVENIDA.setText("jLabel2");
